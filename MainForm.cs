@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Windows.Forms;
 
 namespace ScootSim {
@@ -27,9 +26,9 @@ namespace ScootSim {
 
 
         void OnPlanetResourcesChanged( object sender, EventArgs e ) {
-            session.Resources.Metal = (int)nMetal.Value;
-            session.Resources.Crystal = (int)nCrystal.Value;
-            session.Resources.Deut = (int)nDeut.Value;
+            session.Resources.Metal = (long)nMetal.Value;
+            session.Resources.Crystal = (long)nCrystal.Value;
+            session.Resources.Deut = (long)nDeut.Value;
 
             Res plunder = session.Resources.GetMultiple( Universe.Plunder );
             tMetal.Text = FormatUtil.FormatRes( plunder.Metal );

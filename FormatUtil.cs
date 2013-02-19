@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
+﻿using System.Globalization;
 
 namespace ScootSim {
     static class FormatUtil {
@@ -12,7 +8,7 @@ namespace ScootSim {
             ResFormatter.NumberGroupSeparator = ".";
         }
 
-        public static string FormatRes( int number ) {
+        public static string FormatRes( long number ) {
             return number.ToString( "#,#", ResFormatter );
         }
     }

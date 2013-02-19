@@ -106,20 +106,27 @@
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.mOptimizeAdvanced = new System.Windows.Forms.ToolStripMenuItem();
             this.gPlanetInfo = new System.Windows.Forms.GroupBox();
+            this.nDeut = new ScootSim.SeparatedNumericUpDown();
+            this.nCrystal = new ScootSim.SeparatedNumericUpDown();
+            this.nMetal = new ScootSim.SeparatedNumericUpDown();
             this.tDeut = new System.Windows.Forms.TextBox();
             this.tCrystal = new System.Windows.Forms.TextBox();
             this.tMetal = new System.Windows.Forms.TextBox();
             this.lMetal = new System.Windows.Forms.Label();
-            this.nMetal = new System.Windows.Forms.NumericUpDown();
             this.lCrystal = new System.Windows.Forms.Label();
-            this.nCrystal = new System.Windows.Forms.NumericUpDown();
             this.lDeut = new System.Windows.Forms.Label();
-            this.nDeut = new System.Windows.Forms.NumericUpDown();
             this.lPlunderLC = new System.Windows.Forms.Label();
             this.lPlunderSC = new System.Windows.Forms.Label();
             this.gPlanetDefenses = new System.Windows.Forms.GroupBox();
+            this.defRL = new ScootSim.UnitLine();
+            this.defLL = new ScootSim.UnitLine();
+            this.defHL = new ScootSim.UnitLine();
+            this.defGC = new ScootSim.UnitLine();
+            this.defIC = new ScootSim.UnitLine();
+            this.defPT = new ScootSim.UnitLine();
             this.xSmallDome = new System.Windows.Forms.CheckBox();
             this.xLargeDome = new System.Windows.Forms.CheckBox();
+            this.defSS = new ScootSim.UnitLine();
             this.pResultLeft = new System.Windows.Forms.Panel();
             this.bSimulate = new System.Windows.Forms.Button();
             this.lWinner = new System.Windows.Forms.Label();
@@ -156,6 +163,7 @@
             this.lDefenderName = new System.Windows.Forms.Label();
             this.tDefenderName = new System.Windows.Forms.TextBox();
             this.lPlanetCoords = new System.Windows.Forms.Label();
+            this.coordPlanet = new ScootSim.CoordTextBox();
             this.lDefenderWeapon = new System.Windows.Forms.Label();
             this.nDefenderWeapon = new System.Windows.Forms.NumericUpDown();
             this.lDefenderShield = new System.Windows.Forms.Label();
@@ -163,6 +171,19 @@
             this.lDefenderArmor = new System.Windows.Forms.Label();
             this.nDefenderArmor = new System.Windows.Forms.NumericUpDown();
             this.gDefendingFleet = new System.Windows.Forms.GroupBox();
+            this.shipDefenderSC = new ScootSim.UnitLine();
+            this.shipDefenderLC = new ScootSim.UnitLine();
+            this.shipDefenderLF = new ScootSim.UnitLine();
+            this.shipDefenderHF = new ScootSim.UnitLine();
+            this.shipDefenderCR = new ScootSim.UnitLine();
+            this.shipDefenderBS = new ScootSim.UnitLine();
+            this.shipDefenderCS = new ScootSim.UnitLine();
+            this.shipDefenderR = new ScootSim.UnitLine();
+            this.shipDefenderESP = new ScootSim.UnitLine();
+            this.shipDefenderB = new ScootSim.UnitLine();
+            this.shipDefenderDS = new ScootSim.UnitLine();
+            this.shipDefenderRIP = new ScootSim.UnitLine();
+            this.shipDefenderBC = new ScootSim.UnitLine();
             this.pResultsMiddle = new System.Windows.Forms.Panel();
             this.lDefenderTotalLosses = new System.Windows.Forms.Label();
             this.tDefenderTotalLosses = new System.Windows.Forms.TextBox();
@@ -192,6 +213,7 @@
             this.lAttackerName = new System.Windows.Forms.Label();
             this.tAttackerName = new System.Windows.Forms.TextBox();
             this.lAttackerCoords = new System.Windows.Forms.Label();
+            this.nAttackerCoords = new ScootSim.CoordTextBox();
             this.lAttackerWeapon = new System.Windows.Forms.Label();
             this.nAttackerWeapon = new System.Windows.Forms.NumericUpDown();
             this.lAttackerShield = new System.Windows.Forms.Label();
@@ -199,6 +221,19 @@
             this.lAttackerArmor = new System.Windows.Forms.Label();
             this.nAttackerArmor = new System.Windows.Forms.NumericUpDown();
             this.gAttackingFleet = new System.Windows.Forms.GroupBox();
+            this.shipAttackerSC = new ScootSim.UnitLine();
+            this.shipAttackerLC = new ScootSim.UnitLine();
+            this.shipAttackerLF = new ScootSim.UnitLine();
+            this.shipAttackerHF = new ScootSim.UnitLine();
+            this.shipAttackerCR = new ScootSim.UnitLine();
+            this.shipAttackerBS = new ScootSim.UnitLine();
+            this.shipAttackerCS = new ScootSim.UnitLine();
+            this.shipAttackerR = new ScootSim.UnitLine();
+            this.shipAttackerESP = new ScootSim.UnitLine();
+            this.shipAttackerB = new ScootSim.UnitLine();
+            this.shipAttackerDS = new ScootSim.UnitLine();
+            this.shipAttackerRIP = new ScootSim.UnitLine();
+            this.shipAttackerBC = new ScootSim.UnitLine();
             this.gFuel = new System.Windows.Forms.GroupBox();
             this.lAttackerCombust = new System.Windows.Forms.Label();
             this.nAttackerCombust = new System.Windows.Forms.NumericUpDown();
@@ -219,41 +254,6 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.defRL = new ScootSim.UnitLine();
-            this.defLL = new ScootSim.UnitLine();
-            this.defHL = new ScootSim.UnitLine();
-            this.defGC = new ScootSim.UnitLine();
-            this.defIC = new ScootSim.UnitLine();
-            this.defPT = new ScootSim.UnitLine();
-            this.defSS = new ScootSim.UnitLine();
-            this.coordPlanet = new ScootSim.CoordTextBox();
-            this.shipDefenderSC = new ScootSim.UnitLine();
-            this.shipDefenderLC = new ScootSim.UnitLine();
-            this.shipDefenderLF = new ScootSim.UnitLine();
-            this.shipDefenderHF = new ScootSim.UnitLine();
-            this.shipDefenderCR = new ScootSim.UnitLine();
-            this.shipDefenderBS = new ScootSim.UnitLine();
-            this.shipDefenderCS = new ScootSim.UnitLine();
-            this.shipDefenderR = new ScootSim.UnitLine();
-            this.shipDefenderESP = new ScootSim.UnitLine();
-            this.shipDefenderB = new ScootSim.UnitLine();
-            this.shipDefenderDS = new ScootSim.UnitLine();
-            this.shipDefenderRIP = new ScootSim.UnitLine();
-            this.shipDefenderBC = new ScootSim.UnitLine();
-            this.nAttackerCoords = new ScootSim.CoordTextBox();
-            this.shipAttackerSC = new ScootSim.UnitLine();
-            this.shipAttackerLC = new ScootSim.UnitLine();
-            this.shipAttackerLF = new ScootSim.UnitLine();
-            this.shipAttackerHF = new ScootSim.UnitLine();
-            this.shipAttackerCR = new ScootSim.UnitLine();
-            this.shipAttackerBS = new ScootSim.UnitLine();
-            this.shipAttackerCS = new ScootSim.UnitLine();
-            this.shipAttackerR = new ScootSim.UnitLine();
-            this.shipAttackerESP = new ScootSim.UnitLine();
-            this.shipAttackerB = new ScootSim.UnitLine();
-            this.shipAttackerDS = new ScootSim.UnitLine();
-            this.shipAttackerRIP = new ScootSim.UnitLine();
-            this.shipAttackerBC = new ScootSim.UnitLine();
             mSessionSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             mSessionSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             mSettingsSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -266,9 +266,9 @@
             this.panelLeft.SuspendLayout();
             this.menu.SuspendLayout();
             this.gPlanetInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nMetal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nCrystal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nDeut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nCrystal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nMetal)).BeginInit();
             this.gPlanetDefenses.SuspendLayout();
             this.pResultLeft.SuspendLayout();
             this.tabsDefender.SuspendLayout();
@@ -365,7 +365,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLeft.Location = new System.Drawing.Point(3, 3);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Padding = new System.Windows.Forms.Padding(2, 2, 3, 2);
+            this.panelLeft.Padding = new System.Windows.Forms.Padding(2, 0, 3, 2);
             this.panelLeft.Size = new System.Drawing.Size(329, 395);
             this.panelLeft.TabIndex = 2;
             // 
@@ -376,7 +376,7 @@
             this.mSettings,
             this.mTools,
             this.mOptimize});
-            this.menu.Location = new System.Drawing.Point(2, 2);
+            this.menu.Location = new System.Drawing.Point(2, 0);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(324, 25);
             this.menu.TabIndex = 5;
@@ -904,34 +904,72 @@
             // 
             this.gPlanetInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gPlanetInfo.Controls.Add(this.nDeut);
+            this.gPlanetInfo.Controls.Add(this.nCrystal);
+            this.gPlanetInfo.Controls.Add(this.nMetal);
             this.gPlanetInfo.Controls.Add(this.tDeut);
             this.gPlanetInfo.Controls.Add(this.tCrystal);
             this.gPlanetInfo.Controls.Add(this.tMetal);
             this.gPlanetInfo.Controls.Add(this.lMetal);
-            this.gPlanetInfo.Controls.Add(this.nMetal);
             this.gPlanetInfo.Controls.Add(this.lCrystal);
-            this.gPlanetInfo.Controls.Add(this.nCrystal);
             this.gPlanetInfo.Controls.Add(this.lDeut);
-            this.gPlanetInfo.Controls.Add(this.nDeut);
             this.gPlanetInfo.Controls.Add(this.lPlunderLC);
             this.gPlanetInfo.Controls.Add(this.lPlunderSC);
-            this.gPlanetInfo.Location = new System.Drawing.Point(5, 29);
+            this.gPlanetInfo.Location = new System.Drawing.Point(5, 27);
             this.gPlanetInfo.Name = "gPlanetInfo";
-            this.gPlanetInfo.Size = new System.Drawing.Size(318, 99);
+            this.gPlanetInfo.Size = new System.Drawing.Size(318, 101);
             this.gPlanetInfo.TabIndex = 3;
             this.gPlanetInfo.TabStop = false;
             this.gPlanetInfo.Text = "Resources";
+            // 
+            // nDeut
+            // 
+            this.nDeut.Location = new System.Drawing.Point(67, 71);
+            this.nDeut.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.nDeut.Name = "nDeut";
+            this.nDeut.Size = new System.Drawing.Size(95, 20);
+            this.nDeut.TabIndex = 66;
+            this.nDeut.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // nCrystal
+            // 
+            this.nCrystal.Location = new System.Drawing.Point(67, 45);
+            this.nCrystal.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.nCrystal.Name = "nCrystal";
+            this.nCrystal.Size = new System.Drawing.Size(95, 20);
+            this.nCrystal.TabIndex = 65;
+            this.nCrystal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // nMetal
+            // 
+            this.nMetal.Location = new System.Drawing.Point(67, 19);
+            this.nMetal.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.nMetal.Name = "nMetal";
+            this.nMetal.Size = new System.Drawing.Size(95, 20);
+            this.nMetal.TabIndex = 64;
+            this.nMetal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tDeut
             // 
             this.tDeut.BackColor = System.Drawing.SystemColors.Window;
             this.tDeut.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tDeut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tDeut.Location = new System.Drawing.Point(142, 72);
+            this.tDeut.Location = new System.Drawing.Point(165, 73);
             this.tDeut.Margin = new System.Windows.Forms.Padding(0);
             this.tDeut.Name = "tDeut";
             this.tDeut.ReadOnly = true;
-            this.tDeut.Size = new System.Drawing.Size(87, 14);
+            this.tDeut.Size = new System.Drawing.Size(74, 13);
             this.tDeut.TabIndex = 63;
             this.tDeut.Text = "000.000.000";
             this.tDeut.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -940,12 +978,11 @@
             // 
             this.tCrystal.BackColor = System.Drawing.SystemColors.Window;
             this.tCrystal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tCrystal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tCrystal.Location = new System.Drawing.Point(142, 46);
+            this.tCrystal.Location = new System.Drawing.Point(165, 47);
             this.tCrystal.Margin = new System.Windows.Forms.Padding(0);
             this.tCrystal.Name = "tCrystal";
             this.tCrystal.ReadOnly = true;
-            this.tCrystal.Size = new System.Drawing.Size(87, 14);
+            this.tCrystal.Size = new System.Drawing.Size(74, 13);
             this.tCrystal.TabIndex = 62;
             this.tCrystal.Text = "000.000.000";
             this.tCrystal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -954,12 +991,11 @@
             // 
             this.tMetal.BackColor = System.Drawing.SystemColors.Window;
             this.tMetal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tMetal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tMetal.Location = new System.Drawing.Point(142, 19);
+            this.tMetal.Location = new System.Drawing.Point(165, 21);
             this.tMetal.Margin = new System.Windows.Forms.Padding(0);
             this.tMetal.Name = "tMetal";
             this.tMetal.ReadOnly = true;
-            this.tMetal.Size = new System.Drawing.Size(87, 14);
+            this.tMetal.Size = new System.Drawing.Size(74, 13);
             this.tMetal.TabIndex = 61;
             this.tMetal.Text = "000.000.000";
             this.tMetal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -967,76 +1003,38 @@
             // lMetal
             // 
             this.lMetal.AutoSize = true;
-            this.lMetal.Location = new System.Drawing.Point(25, 21);
+            this.lMetal.Location = new System.Drawing.Point(28, 21);
             this.lMetal.Name = "lMetal";
             this.lMetal.Size = new System.Drawing.Size(33, 13);
             this.lMetal.TabIndex = 22;
             this.lMetal.Text = "Metal";
             // 
-            // nMetal
-            // 
-            this.nMetal.Location = new System.Drawing.Point(64, 19);
-            this.nMetal.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.nMetal.Name = "nMetal";
-            this.nMetal.Size = new System.Drawing.Size(75, 20);
-            this.nMetal.TabIndex = 23;
-            this.nMetal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lCrystal
             // 
             this.lCrystal.AutoSize = true;
-            this.lCrystal.Location = new System.Drawing.Point(20, 48);
+            this.lCrystal.Location = new System.Drawing.Point(23, 47);
             this.lCrystal.Name = "lCrystal";
             this.lCrystal.Size = new System.Drawing.Size(38, 13);
             this.lCrystal.TabIndex = 24;
             this.lCrystal.Text = "Crystal";
             // 
-            // nCrystal
-            // 
-            this.nCrystal.Location = new System.Drawing.Point(64, 45);
-            this.nCrystal.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.nCrystal.Name = "nCrystal";
-            this.nCrystal.Size = new System.Drawing.Size(75, 20);
-            this.nCrystal.TabIndex = 25;
-            this.nCrystal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lDeut
             // 
             this.lDeut.AutoSize = true;
-            this.lDeut.Location = new System.Drawing.Point(3, 74);
+            this.lDeut.Location = new System.Drawing.Point(6, 73);
             this.lDeut.Name = "lDeut";
             this.lDeut.Size = new System.Drawing.Size(55, 13);
             this.lDeut.TabIndex = 26;
             this.lDeut.Text = "Deuterium";
             // 
-            // nDeut
-            // 
-            this.nDeut.Location = new System.Drawing.Point(64, 71);
-            this.nDeut.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.nDeut.Name = "nDeut";
-            this.nDeut.Size = new System.Drawing.Size(75, 20);
-            this.nDeut.TabIndex = 27;
-            this.nDeut.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lPlunderLC
             // 
             this.lPlunderLC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lPlunderLC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lPlunderLC.Location = new System.Drawing.Point(227, 45);
+            this.lPlunderLC.Location = new System.Drawing.Point(239, 44);
+            this.lPlunderLC.Margin = new System.Windows.Forms.Padding(0);
             this.lPlunderLC.Name = "lPlunderLC";
-            this.lPlunderLC.Size = new System.Drawing.Size(85, 20);
+            this.lPlunderLC.Size = new System.Drawing.Size(76, 20);
             this.lPlunderLC.TabIndex = 35;
             this.lPlunderLC.Text = "000 LC";
             this.lPlunderLC.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1045,9 +1043,10 @@
             // 
             this.lPlunderSC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lPlunderSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lPlunderSC.Location = new System.Drawing.Point(224, 71);
+            this.lPlunderSC.Location = new System.Drawing.Point(239, 71);
+            this.lPlunderSC.Margin = new System.Windows.Forms.Padding(0);
             this.lPlunderSC.Name = "lPlunderSC";
-            this.lPlunderSC.Size = new System.Drawing.Size(88, 20);
+            this.lPlunderSC.Size = new System.Drawing.Size(76, 20);
             this.lPlunderSC.TabIndex = 36;
             this.lPlunderSC.Text = "0000 SC";
             this.lPlunderSC.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -1067,10 +1066,94 @@
             this.gPlanetDefenses.Controls.Add(this.defSS);
             this.gPlanetDefenses.Location = new System.Drawing.Point(5, 134);
             this.gPlanetDefenses.Name = "gPlanetDefenses";
-            this.gPlanetDefenses.Size = new System.Drawing.Size(318, 257);
+            this.gPlanetDefenses.Size = new System.Drawing.Size(318, 256);
             this.gPlanetDefenses.TabIndex = 2;
             this.gPlanetDefenses.TabStop = false;
             this.gPlanetDefenses.Text = "Planet Defenses";
+            // 
+            // defRL
+            // 
+            this.defRL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.defRL.BackColor = System.Drawing.Color.White;
+            this.defRL.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.defRL.Location = new System.Drawing.Point(3, 19);
+            this.defRL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.defRL.Name = "defRL";
+            this.defRL.ShipType = "R. Launcher";
+            this.defRL.ShowCheckbox = false;
+            this.defRL.Size = new System.Drawing.Size(312, 24);
+            this.defRL.TabIndex = 30;
+            // 
+            // defLL
+            // 
+            this.defLL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.defLL.BackColor = System.Drawing.Color.White;
+            this.defLL.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.defLL.Location = new System.Drawing.Point(3, 45);
+            this.defLL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.defLL.Name = "defLL";
+            this.defLL.ShipType = "Light Laser";
+            this.defLL.ShowCheckbox = false;
+            this.defLL.Size = new System.Drawing.Size(312, 24);
+            this.defLL.TabIndex = 31;
+            // 
+            // defHL
+            // 
+            this.defHL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.defHL.BackColor = System.Drawing.Color.White;
+            this.defHL.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.defHL.Location = new System.Drawing.Point(3, 71);
+            this.defHL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.defHL.Name = "defHL";
+            this.defHL.ShipType = "Heavy Laser";
+            this.defHL.ShowCheckbox = false;
+            this.defHL.Size = new System.Drawing.Size(312, 24);
+            this.defHL.TabIndex = 32;
+            // 
+            // defGC
+            // 
+            this.defGC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.defGC.BackColor = System.Drawing.Color.White;
+            this.defGC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.defGC.Location = new System.Drawing.Point(3, 97);
+            this.defGC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.defGC.Name = "defGC";
+            this.defGC.ShipType = "Gauss Cannon";
+            this.defGC.ShowCheckbox = false;
+            this.defGC.Size = new System.Drawing.Size(312, 24);
+            this.defGC.TabIndex = 33;
+            // 
+            // defIC
+            // 
+            this.defIC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.defIC.BackColor = System.Drawing.Color.White;
+            this.defIC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.defIC.Location = new System.Drawing.Point(3, 123);
+            this.defIC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.defIC.Name = "defIC";
+            this.defIC.ShipType = "Ion Cannon";
+            this.defIC.ShowCheckbox = false;
+            this.defIC.Size = new System.Drawing.Size(312, 24);
+            this.defIC.TabIndex = 34;
+            // 
+            // defPT
+            // 
+            this.defPT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.defPT.BackColor = System.Drawing.Color.White;
+            this.defPT.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.defPT.Location = new System.Drawing.Point(3, 149);
+            this.defPT.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.defPT.Name = "defPT";
+            this.defPT.ShipType = "Plasma Turret";
+            this.defPT.ShowCheckbox = false;
+            this.defPT.Size = new System.Drawing.Size(312, 24);
+            this.defPT.TabIndex = 35;
             // 
             // xSmallDome
             // 
@@ -1091,6 +1174,20 @@
             this.xLargeDome.TabIndex = 29;
             this.xLargeDome.Text = "Large Shield Dome";
             this.xLargeDome.UseVisualStyleBackColor = true;
+            // 
+            // defSS
+            // 
+            this.defSS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.defSS.BackColor = System.Drawing.Color.White;
+            this.defSS.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.defSS.Location = new System.Drawing.Point(3, 225);
+            this.defSS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.defSS.Name = "defSS";
+            this.defSS.ShipType = "Solar Sat";
+            this.defSS.ShowCheckbox = false;
+            this.defSS.Size = new System.Drawing.Size(312, 24);
+            this.defSS.TabIndex = 36;
             // 
             // pResultLeft
             // 
@@ -1476,6 +1573,16 @@
             this.lPlanetCoords.TabIndex = 19;
             this.lPlanetCoords.Text = "Coords";
             // 
+            // coordPlanet
+            // 
+            this.coordPlanet.BackColor = System.Drawing.Color.LightPink;
+            this.coordPlanet.ErrorBackColor = System.Drawing.Color.LightPink;
+            this.coordPlanet.Location = new System.Drawing.Point(250, 19);
+            this.coordPlanet.Name = "coordPlanet";
+            this.coordPlanet.Size = new System.Drawing.Size(59, 20);
+            this.coordPlanet.TabIndex = 31;
+            this.coordPlanet.ValidBackColor = System.Drawing.SystemColors.Window;
+            // 
             // lDefenderWeapon
             // 
             this.lDefenderWeapon.AutoSize = true;
@@ -1550,6 +1657,188 @@
             this.gDefendingFleet.TabIndex = 5;
             this.gDefendingFleet.TabStop = false;
             this.gDefendingFleet.Text = "Defending Fleet";
+            // 
+            // shipDefenderSC
+            // 
+            this.shipDefenderSC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderSC.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderSC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderSC.Location = new System.Drawing.Point(2, 19);
+            this.shipDefenderSC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderSC.Name = "shipDefenderSC";
+            this.shipDefenderSC.ShipType = "Small Cargo";
+            this.shipDefenderSC.ShowCheckbox = false;
+            this.shipDefenderSC.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderSC.TabIndex = 13;
+            // 
+            // shipDefenderLC
+            // 
+            this.shipDefenderLC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderLC.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderLC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderLC.Location = new System.Drawing.Point(2, 45);
+            this.shipDefenderLC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderLC.Name = "shipDefenderLC";
+            this.shipDefenderLC.ShipType = "Large Cargo";
+            this.shipDefenderLC.ShowCheckbox = false;
+            this.shipDefenderLC.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderLC.TabIndex = 14;
+            // 
+            // shipDefenderLF
+            // 
+            this.shipDefenderLF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderLF.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderLF.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderLF.Location = new System.Drawing.Point(2, 71);
+            this.shipDefenderLF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderLF.Name = "shipDefenderLF";
+            this.shipDefenderLF.ShipType = "Light Fighter";
+            this.shipDefenderLF.ShowCheckbox = false;
+            this.shipDefenderLF.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderLF.TabIndex = 15;
+            // 
+            // shipDefenderHF
+            // 
+            this.shipDefenderHF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderHF.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderHF.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderHF.Location = new System.Drawing.Point(2, 97);
+            this.shipDefenderHF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderHF.Name = "shipDefenderHF";
+            this.shipDefenderHF.ShipType = "Heavy Fighter";
+            this.shipDefenderHF.ShowCheckbox = false;
+            this.shipDefenderHF.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderHF.TabIndex = 16;
+            // 
+            // shipDefenderCR
+            // 
+            this.shipDefenderCR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderCR.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderCR.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderCR.Location = new System.Drawing.Point(2, 123);
+            this.shipDefenderCR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderCR.Name = "shipDefenderCR";
+            this.shipDefenderCR.ShipType = "Cruiser";
+            this.shipDefenderCR.ShowCheckbox = false;
+            this.shipDefenderCR.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderCR.TabIndex = 17;
+            // 
+            // shipDefenderBS
+            // 
+            this.shipDefenderBS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderBS.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderBS.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderBS.Location = new System.Drawing.Point(2, 149);
+            this.shipDefenderBS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderBS.Name = "shipDefenderBS";
+            this.shipDefenderBS.ShipType = "Battleship";
+            this.shipDefenderBS.ShowCheckbox = false;
+            this.shipDefenderBS.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderBS.TabIndex = 18;
+            // 
+            // shipDefenderCS
+            // 
+            this.shipDefenderCS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderCS.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderCS.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderCS.Location = new System.Drawing.Point(2, 175);
+            this.shipDefenderCS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderCS.Name = "shipDefenderCS";
+            this.shipDefenderCS.ShipType = "Colony Ship";
+            this.shipDefenderCS.ShowCheckbox = false;
+            this.shipDefenderCS.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderCS.TabIndex = 19;
+            // 
+            // shipDefenderR
+            // 
+            this.shipDefenderR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderR.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderR.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderR.Location = new System.Drawing.Point(2, 201);
+            this.shipDefenderR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderR.Name = "shipDefenderR";
+            this.shipDefenderR.ShipType = "Recycler";
+            this.shipDefenderR.ShowCheckbox = false;
+            this.shipDefenderR.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderR.TabIndex = 20;
+            // 
+            // shipDefenderESP
+            // 
+            this.shipDefenderESP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderESP.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderESP.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderESP.Location = new System.Drawing.Point(2, 227);
+            this.shipDefenderESP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderESP.Name = "shipDefenderESP";
+            this.shipDefenderESP.ShipType = "Esp Probe";
+            this.shipDefenderESP.ShowCheckbox = false;
+            this.shipDefenderESP.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderESP.TabIndex = 21;
+            // 
+            // shipDefenderB
+            // 
+            this.shipDefenderB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderB.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderB.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderB.Location = new System.Drawing.Point(2, 253);
+            this.shipDefenderB.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderB.Name = "shipDefenderB";
+            this.shipDefenderB.ShipType = "Bomber";
+            this.shipDefenderB.ShowCheckbox = false;
+            this.shipDefenderB.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderB.TabIndex = 22;
+            // 
+            // shipDefenderDS
+            // 
+            this.shipDefenderDS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderDS.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderDS.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderDS.Location = new System.Drawing.Point(2, 279);
+            this.shipDefenderDS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderDS.Name = "shipDefenderDS";
+            this.shipDefenderDS.ShipType = "Destroyer";
+            this.shipDefenderDS.ShowCheckbox = false;
+            this.shipDefenderDS.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderDS.TabIndex = 23;
+            // 
+            // shipDefenderRIP
+            // 
+            this.shipDefenderRIP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderRIP.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderRIP.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderRIP.Location = new System.Drawing.Point(2, 305);
+            this.shipDefenderRIP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderRIP.Name = "shipDefenderRIP";
+            this.shipDefenderRIP.ShipType = "Deathstar";
+            this.shipDefenderRIP.ShowCheckbox = false;
+            this.shipDefenderRIP.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderRIP.TabIndex = 24;
+            // 
+            // shipDefenderBC
+            // 
+            this.shipDefenderBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipDefenderBC.BackColor = System.Drawing.SystemColors.Window;
+            this.shipDefenderBC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipDefenderBC.Location = new System.Drawing.Point(2, 331);
+            this.shipDefenderBC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipDefenderBC.Name = "shipDefenderBC";
+            this.shipDefenderBC.ShipType = "Battlecruiser";
+            this.shipDefenderBC.ShowCheckbox = false;
+            this.shipDefenderBC.Size = new System.Drawing.Size(310, 24);
+            this.shipDefenderBC.TabIndex = 25;
             // 
             // pResultsMiddle
             // 
@@ -1840,6 +2129,16 @@
             this.lAttackerCoords.TabIndex = 32;
             this.lAttackerCoords.Text = "Coords";
             // 
+            // nAttackerCoords
+            // 
+            this.nAttackerCoords.BackColor = System.Drawing.Color.LightPink;
+            this.nAttackerCoords.ErrorBackColor = System.Drawing.Color.LightPink;
+            this.nAttackerCoords.Location = new System.Drawing.Point(251, 19);
+            this.nAttackerCoords.Name = "nAttackerCoords";
+            this.nAttackerCoords.Size = new System.Drawing.Size(59, 20);
+            this.nAttackerCoords.TabIndex = 33;
+            this.nAttackerCoords.ValidBackColor = System.Drawing.SystemColors.Window;
+            // 
             // lAttackerWeapon
             // 
             this.lAttackerWeapon.AutoSize = true;
@@ -1914,6 +2213,175 @@
             this.gAttackingFleet.TabIndex = 4;
             this.gAttackingFleet.TabStop = false;
             this.gAttackingFleet.Text = "Attacking Fleet";
+            // 
+            // shipAttackerSC
+            // 
+            this.shipAttackerSC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerSC.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerSC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerSC.Location = new System.Drawing.Point(3, 19);
+            this.shipAttackerSC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerSC.Name = "shipAttackerSC";
+            this.shipAttackerSC.ShipType = "Small Cargo";
+            this.shipAttackerSC.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerSC.TabIndex = 0;
+            // 
+            // shipAttackerLC
+            // 
+            this.shipAttackerLC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerLC.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerLC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerLC.Location = new System.Drawing.Point(3, 45);
+            this.shipAttackerLC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerLC.Name = "shipAttackerLC";
+            this.shipAttackerLC.ShipType = "Large Cargo";
+            this.shipAttackerLC.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerLC.TabIndex = 1;
+            // 
+            // shipAttackerLF
+            // 
+            this.shipAttackerLF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerLF.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerLF.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerLF.Location = new System.Drawing.Point(3, 71);
+            this.shipAttackerLF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerLF.Name = "shipAttackerLF";
+            this.shipAttackerLF.ShipType = "Light Fighter";
+            this.shipAttackerLF.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerLF.TabIndex = 2;
+            // 
+            // shipAttackerHF
+            // 
+            this.shipAttackerHF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerHF.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerHF.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerHF.Location = new System.Drawing.Point(3, 97);
+            this.shipAttackerHF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerHF.Name = "shipAttackerHF";
+            this.shipAttackerHF.ShipType = "Heavy Fighter";
+            this.shipAttackerHF.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerHF.TabIndex = 3;
+            // 
+            // shipAttackerCR
+            // 
+            this.shipAttackerCR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerCR.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerCR.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerCR.Location = new System.Drawing.Point(3, 123);
+            this.shipAttackerCR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerCR.Name = "shipAttackerCR";
+            this.shipAttackerCR.ShipType = "Cruiser";
+            this.shipAttackerCR.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerCR.TabIndex = 4;
+            // 
+            // shipAttackerBS
+            // 
+            this.shipAttackerBS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerBS.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerBS.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerBS.Location = new System.Drawing.Point(3, 149);
+            this.shipAttackerBS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerBS.Name = "shipAttackerBS";
+            this.shipAttackerBS.ShipType = "Battleship";
+            this.shipAttackerBS.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerBS.TabIndex = 5;
+            // 
+            // shipAttackerCS
+            // 
+            this.shipAttackerCS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerCS.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerCS.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerCS.Location = new System.Drawing.Point(3, 175);
+            this.shipAttackerCS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerCS.Name = "shipAttackerCS";
+            this.shipAttackerCS.ShipType = "Colony Ship";
+            this.shipAttackerCS.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerCS.TabIndex = 6;
+            // 
+            // shipAttackerR
+            // 
+            this.shipAttackerR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerR.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerR.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerR.Location = new System.Drawing.Point(3, 201);
+            this.shipAttackerR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerR.Name = "shipAttackerR";
+            this.shipAttackerR.ShipType = "Recycler";
+            this.shipAttackerR.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerR.TabIndex = 7;
+            // 
+            // shipAttackerESP
+            // 
+            this.shipAttackerESP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerESP.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerESP.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerESP.Location = new System.Drawing.Point(3, 227);
+            this.shipAttackerESP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerESP.Name = "shipAttackerESP";
+            this.shipAttackerESP.ShipType = "Esp Probe";
+            this.shipAttackerESP.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerESP.TabIndex = 8;
+            // 
+            // shipAttackerB
+            // 
+            this.shipAttackerB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerB.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerB.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerB.Location = new System.Drawing.Point(3, 253);
+            this.shipAttackerB.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerB.Name = "shipAttackerB";
+            this.shipAttackerB.ShipType = "Bomber";
+            this.shipAttackerB.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerB.TabIndex = 9;
+            // 
+            // shipAttackerDS
+            // 
+            this.shipAttackerDS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerDS.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerDS.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerDS.Location = new System.Drawing.Point(3, 279);
+            this.shipAttackerDS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerDS.Name = "shipAttackerDS";
+            this.shipAttackerDS.ShipType = "Destroyer";
+            this.shipAttackerDS.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerDS.TabIndex = 10;
+            // 
+            // shipAttackerRIP
+            // 
+            this.shipAttackerRIP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerRIP.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerRIP.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerRIP.Location = new System.Drawing.Point(3, 305);
+            this.shipAttackerRIP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerRIP.Name = "shipAttackerRIP";
+            this.shipAttackerRIP.ShipType = "Deathstar";
+            this.shipAttackerRIP.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerRIP.TabIndex = 11;
+            // 
+            // shipAttackerBC
+            // 
+            this.shipAttackerBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.shipAttackerBC.BackColor = System.Drawing.SystemColors.Window;
+            this.shipAttackerBC.HighlightColor = System.Drawing.SystemColors.Highlight;
+            this.shipAttackerBC.Location = new System.Drawing.Point(3, 331);
+            this.shipAttackerBC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.shipAttackerBC.Name = "shipAttackerBC";
+            this.shipAttackerBC.ShipType = "Battlecruiser";
+            this.shipAttackerBC.Size = new System.Drawing.Size(310, 24);
+            this.shipAttackerBC.TabIndex = 12;
             // 
             // gFuel
             // 
@@ -2121,475 +2589,6 @@
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
-            // defRL
-            // 
-            this.defRL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.defRL.BackColor = System.Drawing.Color.White;
-            this.defRL.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.defRL.Location = new System.Drawing.Point(3, 19);
-            this.defRL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.defRL.Name = "defRL";
-            this.defRL.ShipType = "R. Launcher";
-            this.defRL.ShowCheckbox = false;
-            this.defRL.Size = new System.Drawing.Size(312, 24);
-            this.defRL.TabIndex = 30;
-            // 
-            // defLL
-            // 
-            this.defLL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.defLL.BackColor = System.Drawing.Color.White;
-            this.defLL.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.defLL.Location = new System.Drawing.Point(3, 45);
-            this.defLL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.defLL.Name = "defLL";
-            this.defLL.ShipType = "Light Laser";
-            this.defLL.ShowCheckbox = false;
-            this.defLL.Size = new System.Drawing.Size(312, 24);
-            this.defLL.TabIndex = 31;
-            // 
-            // defHL
-            // 
-            this.defHL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.defHL.BackColor = System.Drawing.Color.White;
-            this.defHL.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.defHL.Location = new System.Drawing.Point(3, 71);
-            this.defHL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.defHL.Name = "defHL";
-            this.defHL.ShipType = "Heavy Laser";
-            this.defHL.ShowCheckbox = false;
-            this.defHL.Size = new System.Drawing.Size(312, 24);
-            this.defHL.TabIndex = 32;
-            // 
-            // defGC
-            // 
-            this.defGC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.defGC.BackColor = System.Drawing.Color.White;
-            this.defGC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.defGC.Location = new System.Drawing.Point(3, 97);
-            this.defGC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.defGC.Name = "defGC";
-            this.defGC.ShipType = "Gauss Cannon";
-            this.defGC.ShowCheckbox = false;
-            this.defGC.Size = new System.Drawing.Size(312, 24);
-            this.defGC.TabIndex = 33;
-            // 
-            // defIC
-            // 
-            this.defIC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.defIC.BackColor = System.Drawing.Color.White;
-            this.defIC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.defIC.Location = new System.Drawing.Point(3, 123);
-            this.defIC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.defIC.Name = "defIC";
-            this.defIC.ShipType = "Ion Cannon";
-            this.defIC.ShowCheckbox = false;
-            this.defIC.Size = new System.Drawing.Size(312, 24);
-            this.defIC.TabIndex = 34;
-            // 
-            // defPT
-            // 
-            this.defPT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.defPT.BackColor = System.Drawing.Color.White;
-            this.defPT.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.defPT.Location = new System.Drawing.Point(3, 149);
-            this.defPT.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.defPT.Name = "defPT";
-            this.defPT.ShipType = "Plasma Turret";
-            this.defPT.ShowCheckbox = false;
-            this.defPT.Size = new System.Drawing.Size(312, 24);
-            this.defPT.TabIndex = 35;
-            // 
-            // defSS
-            // 
-            this.defSS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.defSS.BackColor = System.Drawing.Color.White;
-            this.defSS.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.defSS.Location = new System.Drawing.Point(3, 225);
-            this.defSS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.defSS.Name = "defSS";
-            this.defSS.ShipType = "Solar Sat";
-            this.defSS.ShowCheckbox = false;
-            this.defSS.Size = new System.Drawing.Size(312, 24);
-            this.defSS.TabIndex = 36;
-            // 
-            // coordPlanet
-            // 
-            this.coordPlanet.BackColor = System.Drawing.Color.LightPink;
-            this.coordPlanet.ErrorBackColor = System.Drawing.Color.LightPink;
-            this.coordPlanet.Location = new System.Drawing.Point(250, 19);
-            this.coordPlanet.Name = "coordPlanet";
-            this.coordPlanet.Size = new System.Drawing.Size(59, 20);
-            this.coordPlanet.TabIndex = 31;
-            this.coordPlanet.ValidBackColor = System.Drawing.SystemColors.Window;
-            // 
-            // shipDefenderSC
-            // 
-            this.shipDefenderSC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderSC.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderSC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderSC.Location = new System.Drawing.Point(2, 19);
-            this.shipDefenderSC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderSC.Name = "shipDefenderSC";
-            this.shipDefenderSC.ShipType = "Small Cargo";
-            this.shipDefenderSC.ShowCheckbox = false;
-            this.shipDefenderSC.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderSC.TabIndex = 13;
-            // 
-            // shipDefenderLC
-            // 
-            this.shipDefenderLC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderLC.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderLC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderLC.Location = new System.Drawing.Point(2, 45);
-            this.shipDefenderLC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderLC.Name = "shipDefenderLC";
-            this.shipDefenderLC.ShipType = "Large Cargo";
-            this.shipDefenderLC.ShowCheckbox = false;
-            this.shipDefenderLC.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderLC.TabIndex = 14;
-            // 
-            // shipDefenderLF
-            // 
-            this.shipDefenderLF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderLF.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderLF.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderLF.Location = new System.Drawing.Point(2, 71);
-            this.shipDefenderLF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderLF.Name = "shipDefenderLF";
-            this.shipDefenderLF.ShipType = "Light Fighter";
-            this.shipDefenderLF.ShowCheckbox = false;
-            this.shipDefenderLF.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderLF.TabIndex = 15;
-            // 
-            // shipDefenderHF
-            // 
-            this.shipDefenderHF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderHF.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderHF.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderHF.Location = new System.Drawing.Point(2, 97);
-            this.shipDefenderHF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderHF.Name = "shipDefenderHF";
-            this.shipDefenderHF.ShipType = "Heavy Fighter";
-            this.shipDefenderHF.ShowCheckbox = false;
-            this.shipDefenderHF.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderHF.TabIndex = 16;
-            // 
-            // shipDefenderCR
-            // 
-            this.shipDefenderCR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderCR.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderCR.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderCR.Location = new System.Drawing.Point(2, 123);
-            this.shipDefenderCR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderCR.Name = "shipDefenderCR";
-            this.shipDefenderCR.ShipType = "Cruiser";
-            this.shipDefenderCR.ShowCheckbox = false;
-            this.shipDefenderCR.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderCR.TabIndex = 17;
-            // 
-            // shipDefenderBS
-            // 
-            this.shipDefenderBS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderBS.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderBS.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderBS.Location = new System.Drawing.Point(2, 149);
-            this.shipDefenderBS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderBS.Name = "shipDefenderBS";
-            this.shipDefenderBS.ShipType = "Battleship";
-            this.shipDefenderBS.ShowCheckbox = false;
-            this.shipDefenderBS.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderBS.TabIndex = 18;
-            // 
-            // shipDefenderCS
-            // 
-            this.shipDefenderCS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderCS.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderCS.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderCS.Location = new System.Drawing.Point(2, 175);
-            this.shipDefenderCS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderCS.Name = "shipDefenderCS";
-            this.shipDefenderCS.ShipType = "Colony Ship";
-            this.shipDefenderCS.ShowCheckbox = false;
-            this.shipDefenderCS.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderCS.TabIndex = 19;
-            // 
-            // shipDefenderR
-            // 
-            this.shipDefenderR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderR.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderR.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderR.Location = new System.Drawing.Point(2, 201);
-            this.shipDefenderR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderR.Name = "shipDefenderR";
-            this.shipDefenderR.ShipType = "Recycler";
-            this.shipDefenderR.ShowCheckbox = false;
-            this.shipDefenderR.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderR.TabIndex = 20;
-            // 
-            // shipDefenderESP
-            // 
-            this.shipDefenderESP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderESP.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderESP.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderESP.Location = new System.Drawing.Point(2, 227);
-            this.shipDefenderESP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderESP.Name = "shipDefenderESP";
-            this.shipDefenderESP.ShipType = "Esp Probe";
-            this.shipDefenderESP.ShowCheckbox = false;
-            this.shipDefenderESP.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderESP.TabIndex = 21;
-            // 
-            // shipDefenderB
-            // 
-            this.shipDefenderB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderB.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderB.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderB.Location = new System.Drawing.Point(2, 253);
-            this.shipDefenderB.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderB.Name = "shipDefenderB";
-            this.shipDefenderB.ShipType = "Bomber";
-            this.shipDefenderB.ShowCheckbox = false;
-            this.shipDefenderB.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderB.TabIndex = 22;
-            // 
-            // shipDefenderDS
-            // 
-            this.shipDefenderDS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderDS.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderDS.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderDS.Location = new System.Drawing.Point(2, 279);
-            this.shipDefenderDS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderDS.Name = "shipDefenderDS";
-            this.shipDefenderDS.ShipType = "Destroyer";
-            this.shipDefenderDS.ShowCheckbox = false;
-            this.shipDefenderDS.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderDS.TabIndex = 23;
-            // 
-            // shipDefenderRIP
-            // 
-            this.shipDefenderRIP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderRIP.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderRIP.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderRIP.Location = new System.Drawing.Point(2, 305);
-            this.shipDefenderRIP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderRIP.Name = "shipDefenderRIP";
-            this.shipDefenderRIP.ShipType = "Deathstar";
-            this.shipDefenderRIP.ShowCheckbox = false;
-            this.shipDefenderRIP.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderRIP.TabIndex = 24;
-            // 
-            // shipDefenderBC
-            // 
-            this.shipDefenderBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipDefenderBC.BackColor = System.Drawing.SystemColors.Window;
-            this.shipDefenderBC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipDefenderBC.Location = new System.Drawing.Point(2, 331);
-            this.shipDefenderBC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipDefenderBC.Name = "shipDefenderBC";
-            this.shipDefenderBC.ShipType = "Battlecruiser";
-            this.shipDefenderBC.ShowCheckbox = false;
-            this.shipDefenderBC.Size = new System.Drawing.Size(310, 24);
-            this.shipDefenderBC.TabIndex = 25;
-            // 
-            // nAttackerCoords
-            // 
-            this.nAttackerCoords.BackColor = System.Drawing.Color.LightPink;
-            this.nAttackerCoords.ErrorBackColor = System.Drawing.Color.LightPink;
-            this.nAttackerCoords.Location = new System.Drawing.Point(251, 19);
-            this.nAttackerCoords.Name = "nAttackerCoords";
-            this.nAttackerCoords.Size = new System.Drawing.Size(59, 20);
-            this.nAttackerCoords.TabIndex = 33;
-            this.nAttackerCoords.ValidBackColor = System.Drawing.SystemColors.Window;
-            // 
-            // shipAttackerSC
-            // 
-            this.shipAttackerSC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerSC.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerSC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerSC.Location = new System.Drawing.Point(3, 19);
-            this.shipAttackerSC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerSC.Name = "shipAttackerSC";
-            this.shipAttackerSC.ShipType = "Small Cargo";
-            this.shipAttackerSC.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerSC.TabIndex = 0;
-            // 
-            // shipAttackerLC
-            // 
-            this.shipAttackerLC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerLC.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerLC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerLC.Location = new System.Drawing.Point(3, 45);
-            this.shipAttackerLC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerLC.Name = "shipAttackerLC";
-            this.shipAttackerLC.ShipType = "Large Cargo";
-            this.shipAttackerLC.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerLC.TabIndex = 1;
-            // 
-            // shipAttackerLF
-            // 
-            this.shipAttackerLF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerLF.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerLF.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerLF.Location = new System.Drawing.Point(3, 71);
-            this.shipAttackerLF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerLF.Name = "shipAttackerLF";
-            this.shipAttackerLF.ShipType = "Light Fighter";
-            this.shipAttackerLF.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerLF.TabIndex = 2;
-            // 
-            // shipAttackerHF
-            // 
-            this.shipAttackerHF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerHF.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerHF.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerHF.Location = new System.Drawing.Point(3, 97);
-            this.shipAttackerHF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerHF.Name = "shipAttackerHF";
-            this.shipAttackerHF.ShipType = "Heavy Fighter";
-            this.shipAttackerHF.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerHF.TabIndex = 3;
-            // 
-            // shipAttackerCR
-            // 
-            this.shipAttackerCR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerCR.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerCR.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerCR.Location = new System.Drawing.Point(3, 123);
-            this.shipAttackerCR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerCR.Name = "shipAttackerCR";
-            this.shipAttackerCR.ShipType = "Cruiser";
-            this.shipAttackerCR.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerCR.TabIndex = 4;
-            // 
-            // shipAttackerBS
-            // 
-            this.shipAttackerBS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerBS.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerBS.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerBS.Location = new System.Drawing.Point(3, 149);
-            this.shipAttackerBS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerBS.Name = "shipAttackerBS";
-            this.shipAttackerBS.ShipType = "Battleship";
-            this.shipAttackerBS.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerBS.TabIndex = 5;
-            // 
-            // shipAttackerCS
-            // 
-            this.shipAttackerCS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerCS.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerCS.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerCS.Location = new System.Drawing.Point(3, 175);
-            this.shipAttackerCS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerCS.Name = "shipAttackerCS";
-            this.shipAttackerCS.ShipType = "Colony Ship";
-            this.shipAttackerCS.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerCS.TabIndex = 6;
-            // 
-            // shipAttackerR
-            // 
-            this.shipAttackerR.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerR.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerR.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerR.Location = new System.Drawing.Point(3, 201);
-            this.shipAttackerR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerR.Name = "shipAttackerR";
-            this.shipAttackerR.ShipType = "Recycler";
-            this.shipAttackerR.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerR.TabIndex = 7;
-            // 
-            // shipAttackerESP
-            // 
-            this.shipAttackerESP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerESP.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerESP.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerESP.Location = new System.Drawing.Point(3, 227);
-            this.shipAttackerESP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerESP.Name = "shipAttackerESP";
-            this.shipAttackerESP.ShipType = "Esp Probe";
-            this.shipAttackerESP.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerESP.TabIndex = 8;
-            // 
-            // shipAttackerB
-            // 
-            this.shipAttackerB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerB.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerB.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerB.Location = new System.Drawing.Point(3, 253);
-            this.shipAttackerB.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerB.Name = "shipAttackerB";
-            this.shipAttackerB.ShipType = "Bomber";
-            this.shipAttackerB.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerB.TabIndex = 9;
-            // 
-            // shipAttackerDS
-            // 
-            this.shipAttackerDS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerDS.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerDS.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerDS.Location = new System.Drawing.Point(3, 279);
-            this.shipAttackerDS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerDS.Name = "shipAttackerDS";
-            this.shipAttackerDS.ShipType = "Destroyer";
-            this.shipAttackerDS.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerDS.TabIndex = 10;
-            // 
-            // shipAttackerRIP
-            // 
-            this.shipAttackerRIP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerRIP.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerRIP.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerRIP.Location = new System.Drawing.Point(3, 305);
-            this.shipAttackerRIP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerRIP.Name = "shipAttackerRIP";
-            this.shipAttackerRIP.ShipType = "Deathstar";
-            this.shipAttackerRIP.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerRIP.TabIndex = 11;
-            // 
-            // shipAttackerBC
-            // 
-            this.shipAttackerBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.shipAttackerBC.BackColor = System.Drawing.SystemColors.Window;
-            this.shipAttackerBC.HighlightColor = System.Drawing.SystemColors.Highlight;
-            this.shipAttackerBC.Location = new System.Drawing.Point(3, 331);
-            this.shipAttackerBC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.shipAttackerBC.Name = "shipAttackerBC";
-            this.shipAttackerBC.ShipType = "Battlecruiser";
-            this.shipAttackerBC.Size = new System.Drawing.Size(310, 24);
-            this.shipAttackerBC.TabIndex = 12;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2605,9 +2604,9 @@
             this.menu.PerformLayout();
             this.gPlanetInfo.ResumeLayout(false);
             this.gPlanetInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nMetal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nCrystal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nDeut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nCrystal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nMetal)).EndInit();
             this.gPlanetDefenses.ResumeLayout(false);
             this.gPlanetDefenses.PerformLayout();
             this.pResultLeft.ResumeLayout(false);
@@ -2688,11 +2687,8 @@
         private System.Windows.Forms.ToolStripMenuItem mTools;
         private System.Windows.Forms.GroupBox gPlanetInfo;
         private System.Windows.Forms.Label lMetal;
-        private System.Windows.Forms.NumericUpDown nMetal;
         private System.Windows.Forms.Label lCrystal;
-        private System.Windows.Forms.NumericUpDown nCrystal;
         private System.Windows.Forms.Label lDeut;
-        private System.Windows.Forms.NumericUpDown nDeut;
         private System.Windows.Forms.Label lPlanetCoords;
         private System.Windows.Forms.GroupBox gPlanetDefenses;
         private System.Windows.Forms.CheckBox xLargeDome;
@@ -2869,6 +2865,9 @@
         private System.Windows.Forms.TextBox tDeut;
         private System.Windows.Forms.TextBox tCrystal;
         private System.Windows.Forms.TextBox tMetal;
+        private SeparatedNumericUpDown nMetal;
+        private SeparatedNumericUpDown nDeut;
+        private SeparatedNumericUpDown nCrystal;
     }
 }
 
