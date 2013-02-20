@@ -49,7 +49,7 @@
             this.lShipType.Name = "lShipType";
             this.lShipType.Size = new System.Drawing.Size(83, 15);
             this.lShipType.TabIndex = 1;
-            this.lShipType.Text = "(Unit Type)";
+            this.lShipType.Text = "(UnitFactory Type)";
             this.lShipType.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // nShipCount

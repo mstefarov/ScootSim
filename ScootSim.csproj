@@ -48,6 +48,11 @@
     <Compile Include="CoordTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\Ships\LargeCargoFactory.cs" />
+    <Compile Include="Model\Ships\SmallCargoFactory.cs" />
+    <Compile Include="Model\Unit.cs" />
+    <Compile Include="Model\UnitType.cs" />
     <Compile Include="SeparatedNumericUpDown.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -60,7 +65,7 @@
     </Compile>
     <Compile Include="Model\Coord.cs" />
     <Compile Include="Model\Fleet.cs" />
-    <Compile Include="Model\IUnit.cs" />
+    <Compile Include="Model\UnitFactory.cs" />
     <Compile Include="Model\Res.cs" />
     <Compile Include="Model\Session.cs" />
     <Compile Include="Program.cs" />
@@ -71,7 +76,7 @@
     <Compile Include="UnitLine.Designer.cs">
       <DependentUpon>UnitLine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Universe.cs" />
+    <Compile Include="Model\Universe.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

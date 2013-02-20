@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace ScootSim {
     class Session {
+        public readonly Universe Universe = new Universe();
         public Coord PlanetCoord;
-        public string PlanetName;
+        public string PlanetName = "";
         public Res Resources;
 
-        public Res Plunder {
-            get {
-                return Resources.GetMultiple( Universe.Plunder );
-            }
-        }
+        public readonly List<Player> Attackers = new List<Player>();
+        public readonly List<Player> Defenders = new List<Player>();
     }
 }

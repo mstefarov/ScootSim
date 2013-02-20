@@ -54,9 +54,9 @@
             this.mResetEverything = new System.Windows.Forms.ToolStripMenuItem();
             this.mExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mSettings = new System.Windows.Forms.ToolStripMenuItem();
-            this.mACS = new System.Windows.Forms.ToolStripMenuItem();
-            this.mACSEnabled = new System.Windows.Forms.ToolStripMenuItem();
-            this.mACSDisabled = new System.Windows.Forms.ToolStripMenuItem();
+            this.mRapidFire = new System.Windows.Forms.ToolStripMenuItem();
+            this.mRapidFireEnabled = new System.Windows.Forms.ToolStripMenuItem();
+            this.mRapidFireDisabled = new System.Windows.Forms.ToolStripMenuItem();
             this.mUniverseSpeed = new System.Windows.Forms.ToolStripMenuItem();
             this.mUniSpeed1x = new System.Windows.Forms.ToolStripMenuItem();
             this.mUniSpeed2x = new System.Windows.Forms.ToolStripMenuItem();
@@ -519,7 +519,7 @@
             // mSettings
             // 
             this.mSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mACS,
+            this.mRapidFire,
             mSettingsSeparator1,
             this.mUniverseSpeed,
             mSettingsSeparator2,
@@ -533,27 +533,27 @@
             this.mSettings.Size = new System.Drawing.Size(66, 21);
             this.mSettings.Text = "Settings";
             // 
-            // mACS
+            // mRapidFire
             // 
-            this.mACS.CheckOnClick = true;
-            this.mACS.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mACSEnabled,
-            this.mACSDisabled});
-            this.mACS.Name = "mACS";
-            this.mACS.Size = new System.Drawing.Size(192, 22);
-            this.mACS.Text = "ACS";
+            this.mRapidFire.CheckOnClick = true;
+            this.mRapidFire.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mRapidFireEnabled,
+            this.mRapidFireDisabled});
+            this.mRapidFire.Name = "mRapidFire";
+            this.mRapidFire.Size = new System.Drawing.Size(192, 22);
+            this.mRapidFire.Text = "RapidFire";
             // 
-            // mACSEnabled
+            // mRapidFireEnabled
             // 
-            this.mACSEnabled.Name = "mACSEnabled";
-            this.mACSEnabled.Size = new System.Drawing.Size(127, 22);
-            this.mACSEnabled.Text = "Enabled";
+            this.mRapidFireEnabled.Name = "mRapidFireEnabled";
+            this.mRapidFireEnabled.Size = new System.Drawing.Size(127, 22);
+            this.mRapidFireEnabled.Text = "Enabled";
             // 
-            // mACSDisabled
+            // mRapidFireDisabled
             // 
-            this.mACSDisabled.Name = "mACSDisabled";
-            this.mACSDisabled.Size = new System.Drawing.Size(127, 22);
-            this.mACSDisabled.Text = "Disabled";
+            this.mRapidFireDisabled.Name = "mRapidFireDisabled";
+            this.mRapidFireDisabled.Size = new System.Drawing.Size(127, 22);
+            this.mRapidFireDisabled.Text = "Disabled";
             // 
             // mUniverseSpeed
             // 
@@ -2708,7 +2708,7 @@
         private System.Windows.Forms.ToolStripMenuItem mUniSpeed4x;
         private System.Windows.Forms.ToolStripMenuItem mUniSpeed5x;
         private System.Windows.Forms.ToolStripMenuItem mUniSpeed7x;
-        private System.Windows.Forms.ToolStripMenuItem mACS;
+        private System.Windows.Forms.ToolStripMenuItem mRapidFire;
         private System.Windows.Forms.ToolStripMenuItem mUniSpeedOther;
         private System.Windows.Forms.ToolStripMenuItem mFleetToDebris;
         private System.Windows.Forms.ToolStripMenuItem mFleetToDebris30;
@@ -2855,8 +2855,8 @@
         private System.Windows.Forms.ToolStripMenuItem mBattleCases;
         private System.Windows.Forms.ToolStripMenuItem mTimetable;
         private System.Windows.Forms.ToolStripMenuItem mProfitSpreadsheet;
-        private System.Windows.Forms.ToolStripMenuItem mACSEnabled;
-        private System.Windows.Forms.ToolStripMenuItem mACSDisabled;
+        private System.Windows.Forms.ToolStripMenuItem mRapidFireEnabled;
+        private System.Windows.Forms.ToolStripMenuItem mRapidFireDisabled;
         private System.Windows.Forms.TextBox tMoonChance;
         private System.Windows.Forms.Label lMoonChance;
         private System.Windows.Forms.TextBox tRatio;
