@@ -1,5 +1,8 @@
 ﻿namespace ScootSim {
-    class SmallCargoFactory : UnitFactory {
+    class SmallCargoInfo : UnitInfo {
+        const int ImpulseSpeed = 10000;
+        const int CombustSpeed = 5000;
+
         public override UnitType Type {
             get { return UnitType.SmallCargo; }
         }
@@ -25,35 +28,24 @@
         }
 
         public override int Value {
-            get { return 4; }
-        }
-
-
-        public override int GetRapidFire( UnitType target ) {
-            switch( target ) {
-                case UnitType.EspProbe:
-                case UnitType.SolarSat:
-                    return 5;
-                default:
-                    return 1;
-            }
+            get { return 1; } // (2+2) * 25%
         }
 
 
         public override int GetBaseSpeed( Player player ) {
             if( player.ImpulseTech >= 5 ) {
-                return 10000;
+                return ImpulseSpeed;
             } else {
-                return 5000;
+                return CombustSpeed;
             }
         }
 
 
         public override int GetActualSpeed( Player player ) {
             if( player.ImpulseTech >= 5 ) {
-                return (int)(10000*(1 + player.ImpulseTech*.2m));
+                return (int)(ImpulseSpeed*(1 + player.ImpulseTech*.2m));
             } else {
-                return (int)(5000*(1 + player.CombustTech*.1m));
+                return (int)(CombustSpeed*(1 + player.CombustTech*.1m));
             }
         }
 

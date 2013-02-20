@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 namespace ScootSim {
-    abstract class UnitFactory {
+    abstract class UnitInfo {
         public abstract UnitType Type { get; }
         public abstract string Name { get; }
         public abstract int BaseWeapons { get; }
@@ -9,7 +9,17 @@ namespace ScootSim {
         public abstract int BaseArmor { get; }
         public abstract int Capacity { get; }
         public abstract int Value { get; }
-        public abstract int GetRapidFire( UnitType target );
+
+        public virtual int GetRapidFire( UnitType target ) {
+            switch( target ) {
+                case UnitType.EspProbe:
+                case UnitType.SolarSat:
+                    return 5;
+                default:
+                    return 1;
+            }
+        }
+
         public abstract int GetBaseSpeed( Player player );
         public abstract int GetActualSpeed( Player player );
         public abstract int GetFuelConsumption( Player player );
@@ -27,19 +37,19 @@ namespace ScootSim {
         }
 
 
-        static readonly Dictionary<UnitType, UnitFactory> Factories = new Dictionary<UnitType, UnitFactory>();
+        static readonly Dictionary<UnitType, UnitInfo> Factories = new Dictionary<UnitType, UnitInfo>();
 
-        static UnitFactory() {
-            RegisterFactory( new SmallCargoFactory() );
+        static UnitInfo() {
+            RegisterFactory( new SmallCargoInfo() );
         }
 
 
-        static void RegisterFactory( UnitFactory factory ) {
-            Factories.Add( factory.Type, factory );
+        static void RegisterFactory( UnitInfo info ) {
+            Factories.Add( info.Type, info );
         }
 
 
-        public static UnitFactory GetFactory( UnitType type ) {
+        public static UnitInfo GetFactory( UnitType type ) {
             return Factories[type];
         }
 

@@ -49,8 +49,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Model\Player.cs" />
-    <Compile Include="Model\Ships\LargeCargoFactory.cs" />
-    <Compile Include="Model\Ships\SmallCargoFactory.cs" />
+    <Compile Include="Model\Ships\ColonyShipInfo.cs" />
+    <Compile Include="Model\Ships\EspProbeInfo.cs" />
+    <Compile Include="Model\Ships\RecyclerInfo.cs" />
+    <Compile Include="Model\Ships\LightFighterInfo.cs" />
+    <Compile Include="Model\Ships\LargeCargoInfo.cs" />
+    <Compile Include="Model\Ships\SmallCargoInfo.cs" />
     <Compile Include="Model\Unit.cs" />
     <Compile Include="Model\UnitType.cs" />
     <Compile Include="SeparatedNumericUpDown.cs">
@@ -65,7 +69,7 @@
     </Compile>
     <Compile Include="Model\Coord.cs" />
     <Compile Include="Model\Fleet.cs" />
-    <Compile Include="Model\UnitFactory.cs" />
+    <Compile Include="Model\UnitInfo.cs" />
     <Compile Include="Model\Res.cs" />
     <Compile Include="Model\Session.cs" />
     <Compile Include="Program.cs" />

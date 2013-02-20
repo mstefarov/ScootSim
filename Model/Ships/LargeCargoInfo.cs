@@ -1,5 +1,7 @@
 ﻿namespace ScootSim {
-    class LargeCargoFactory : UnitFactory {
+    class LargeCargoInfo : UnitInfo {
+        const int BaseSpeed = 7500;
+
         public override UnitType Type {
             get { return UnitType.LargeCargo; }
         }
@@ -25,28 +27,17 @@
         }
 
         public override int Value {
-            get { return 12; }
-        }
-
-
-        public override int GetRapidFire( UnitType target ) {
-            switch( target ) {
-                case UnitType.EspProbe:
-                case UnitType.SolarSat:
-                    return 5;
-                default:
-                    return 1;
-            }
+            get { return 3; } // (6+6) * 25%
         }
 
 
         public override int GetBaseSpeed( Player player ) {
-            return 7500;
+            return BaseSpeed;
         }
 
 
         public override int GetActualSpeed( Player player ) {
-            return (int)(7500*(1 + player.CombustTech*.1m));
+            return (int)(BaseSpeed*(1 + player.CombustTech*.1m));
         }
 
 
