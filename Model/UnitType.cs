@@ -3,6 +3,7 @@
         SmallCargo,
         LargeCargo,
         LightFighter,
+        HeavyFighter,
         Cruiser,
         Battleship,
         ColonyShip,

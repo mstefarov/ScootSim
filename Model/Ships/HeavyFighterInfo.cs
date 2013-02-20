@@ -1,37 +1,50 @@
 ﻿namespace ScootSim {
-    class ColonyShipInfo : UnitInfo {
-        const int BaseSpeed = 2500;
+    class HeavyFighterInfo : UnitInfo {
+        const int BaseSpeed = 10000;
 
         public override UnitType Type {
-            get { return UnitType.ColonyShip; }
+            get { return UnitType.HeavyFighter; }
         }
 
         public override string Name {
-            get { return "Colony Ship"; }
+            get { return "Heavy Fighter"; }
         }
 
         public override int WeaponPower {
-            get { return 50; }
+            get { return 150; }
         }
 
         public override int ShieldPower {
-            get { return 100; }
+            get { return 25; }
         }
 
         public override int StructuralIntegrity {
-            get { return 30000; }
+            get { return 10000; }
         }
 
         public override int Capacity {
-            get { return 7500; }
+            get { return 100; }
         }
 
         public override Res Cost {
-            get { return new Res( 10000, 20000, 10000 ); }
+            get { return new Res( 6000, 4000, 0 ); }
         }
 
         public override int Value {
             get { return 10; }
+        }
+
+
+        public override int GetRapidFire( UnitType target ) {
+            switch( target ) {
+                case UnitType.EspProbe:
+                case UnitType.SolarSat:
+                    return 5;
+                case UnitType.SmallCargo:
+                    return 3;
+                default:
+                    return 1;
+            }
         }
 
 
@@ -46,7 +59,7 @@
 
 
         public override int GetFuelConsumption( Player player ) {
-            return 1000;
+            return 75;
         }
     }
 }

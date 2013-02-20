@@ -4,10 +4,11 @@ namespace ScootSim {
     abstract class UnitInfo {
         public abstract UnitType Type { get; }
         public abstract string Name { get; }
-        public abstract int BaseWeapons { get; }
-        public abstract int BaseShield { get; }
-        public abstract int BaseArmor { get; }
+        public abstract int WeaponPower { get; }
+        public abstract int ShieldPower { get; }
+        public abstract int StructuralIntegrity { get; }
         public abstract int Capacity { get; }
+        public abstract Res Cost { get; }
         public abstract int Value { get; }
 
         public virtual int GetRapidFire( UnitType target ) {
@@ -26,8 +27,8 @@ namespace ScootSim {
 
 
         public Unit[] MakeUnits( Player player, int count ) {
-            int actualArmor = GetActualStrength( BaseArmor, player.ArmorTech );
-            int actualShield = GetActualStrength( BaseShield, player.ShieldTech );
+            int actualArmor = GetHull( player.ArmorTech );
+            int actualShield = GetShield( player.ShieldTech );
             Unit[] units = new Unit[count];
             for( int i = 0; i < count; i++ ) {
                 units[i].Armor = actualArmor;
@@ -54,8 +55,17 @@ namespace ScootSim {
         }
 
 
-        static int GetActualStrength( int baseValue, int techLevel ) {
-            return (int)((baseValue)*(1 + techLevel*.1m));
+        public int GetHull( int armorTech ) {
+            return (int)((StructuralIntegrity/10m)*(1 + armorTech*.1m));
+        }
+
+        public int GetWeapons( int weaponTech ) {
+            return (int)(WeaponPower*(1 + weaponTech*.1m));
+        }
+
+
+        public int GetShield( int shieldTech ) {
+            return (int)(ShieldPower*(1 + shieldTech*.1m));
         }
     }
 }

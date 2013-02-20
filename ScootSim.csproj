@@ -50,6 +50,14 @@
     </Compile>
     <Compile Include="Model\Player.cs" />
     <Compile Include="Model\Ships\ColonyShipInfo.cs" />
+    <Compile Include="Model\Defenses\SolarSatInfo.cs" />
+    <Compile Include="Model\Ships\BattleshipInfo.cs" />
+    <Compile Include="Model\Ships\BattlecruiserInfo.cs" />
+    <Compile Include="Model\Ships\BomberInfo.cs" />
+    <Compile Include="Model\Ships\DeathstarInfo.cs" />
+    <Compile Include="Model\Ships\DestroyerInfo.cs" />
+    <Compile Include="Model\Ships\CruiserInfo.cs" />
+    <Compile Include="Model\Ships\HeavyFighterInfo.cs" />
     <Compile Include="Model\Ships\EspProbeInfo.cs" />
     <Compile Include="Model\Ships\RecyclerInfo.cs" />
     <Compile Include="Model\Ships\LightFighterInfo.cs" />

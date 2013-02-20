@@ -1,52 +1,55 @@
 ﻿namespace ScootSim {
-    class LightFighterInfo : UnitInfo {
-        const int BaseSpeed = 12500;
-
+    class SolarSatInfo : UnitInfo {
         public override UnitType Type {
-            get { return UnitType.LightFighter; }
+            get { return UnitType.SolarSat; }
         }
 
         public override string Name {
-            get { return "Light Fighter"; }
+            get { return "Solar Satellite"; }
         }
 
         public override int WeaponPower {
-            get { return 50; }
+            get { return 1; }
         }
 
         public override int ShieldPower {
-            get { return 10; }
+            get { return 1; }
         }
 
         public override int StructuralIntegrity {
-            get { return 4000; }
+            get { return 2000; }
         }
 
         public override int Capacity {
-            get { return 50; }
+            get { return 0; }
         }
 
         public override Res Cost {
-            get { return new Res( 3000, 1000, 0 ); }
+            get { return new Res( 2000, 2000, 0 ); }
         }
 
         public override int Value {
-            get { return 4; }
+            get { return 0; }
+        }
+
+
+        public override int GetRapidFire( UnitType target ) {
+            return 1;
         }
 
 
         public override int GetBaseSpeed( Player player ) {
-            return BaseSpeed;
+            return 0;
         }
 
 
         public override int GetActualSpeed( Player player ) {
-            return (int)(BaseSpeed*(1 + player.CombustTech*.1m));
+            return 0;
         }
 
 
         public override int GetFuelConsumption( Player player ) {
-            return 20;
+            return 0;
         }
     }
 }

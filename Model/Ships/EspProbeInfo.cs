@@ -10,15 +10,15 @@
             get { return "Esp Probe"; }
         }
 
-        public override int BaseWeapons {
+        public override int WeaponPower {
             get { return 0; }
         }
 
-        public override int BaseShield {
+        public override int ShieldPower {
             get { return 0; }
         }
 
-        public override int BaseArmor {
+        public override int StructuralIntegrity {
             get { return 1000; }
         }
 
@@ -26,8 +26,18 @@
             get { return 0; }
         }
 
+        public override Res Cost {
+            get { return new Res( 0, 1000, 0 ); }
+        }
+
         public override int Value {
-            get { return 1; }
+            get { return 0; }
+        }
+
+
+
+        public override int GetRapidFire( UnitType target ) {
+            return 1;
         }
 
 

@@ -11,20 +11,24 @@
             get { return "Small Cargo"; }
         }
 
-        public override int BaseWeapons {
+        public override int WeaponPower {
             get { return 5; }
         }
 
-        public override int BaseShield {
+        public override int ShieldPower {
             get { return 10; }
         }
 
-        public override int BaseArmor {
+        public override int StructuralIntegrity {
             get { return 4000; }
         }
 
         public override int Capacity {
             get { return 5000; }
+        }
+
+        public override Res Cost {
+            get { return new Res( 2000, 2000, 0 ); }
         }
 
         public override int Value {

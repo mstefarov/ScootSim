@@ -10,20 +10,24 @@
             get { return "Recycler"; }
         }
 
-        public override int BaseWeapons {
+        public override int WeaponPower {
             get { return 1; }
         }
 
-        public override int BaseShield {
+        public override int ShieldPower {
             get { return 10; }
         }
 
-        public override int BaseArmor {
+        public override int StructuralIntegrity {
             get { return 16000; }
         }
 
         public override int Capacity {
             get { return 20000; }
+        }
+
+        public override Res Cost {
+            get { return new Res( 10000, 6000, 2000 ); }
         }
 
         public override int Value {
