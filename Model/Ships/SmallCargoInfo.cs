@@ -1,14 +1,10 @@
 ﻿namespace ScootSim {
-    class SmallCargoInfo : UnitInfo {
+    class SmallCargoInfo : ShipUnitInfo {
         const int ImpulseSpeed = 10000;
         const int CombustSpeed = 5000;
 
         public override UnitType Type {
             get { return UnitType.SmallCargo; }
-        }
-
-        public override string Name {
-            get { return "Small Cargo"; }
         }
 
         public override int WeaponPower {

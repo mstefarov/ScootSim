@@ -1,13 +1,9 @@
 ﻿namespace ScootSim {
-    class ColonyShipInfo : UnitInfo {
+    class ColonyShipInfo : ShipUnitInfo {
         const int BaseSpeed = 2500;
 
         public override UnitType Type {
             get { return UnitType.ColonyShip; }
-        }
-
-        public override string Name {
-            get { return "Colony Ship"; }
         }
 
         public override int WeaponPower {

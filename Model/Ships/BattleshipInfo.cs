@@ -1,13 +1,9 @@
 ﻿namespace ScootSim {
-    class BattleshipInfo : UnitInfo {
+    class BattleshipInfo : ShipUnitInfo {
         const int BaseSpeed = 10000;
 
         public override UnitType Type {
             get { return UnitType.Battleship; }
-        }
-
-        public override string Name {
-            get { return "Battleship"; }
         }
 
         public override int WeaponPower {

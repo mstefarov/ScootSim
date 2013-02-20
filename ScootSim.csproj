@@ -48,6 +48,15 @@
     <Compile Include="CoordTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Model\Defenses\LargeShieldDomeInfo.cs" />
+    <Compile Include="Model\Defenses\SmallShieldDomeInfo.cs" />
+    <Compile Include="Model\Defenses\PlasmaTurretInfo.cs" />
+    <Compile Include="Model\Defenses\IonCannonInfo.cs" />
+    <Compile Include="Model\Defenses\GaussCannonInfo.cs" />
+    <Compile Include="Model\Defenses\HeavyLaserInfo.cs" />
+    <Compile Include="Model\Defenses\LightLaserInfo.cs" />
+    <Compile Include="Model\Defenses\DefenseUnitInfo.cs" />
+    <Compile Include="Model\Defenses\RocketLauncherInfo.cs" />
     <Compile Include="Model\Player.cs" />
     <Compile Include="Model\Ships\ColonyShipInfo.cs" />
     <Compile Include="Model\Defenses\SolarSatInfo.cs" />
@@ -62,6 +71,7 @@
     <Compile Include="Model\Ships\RecyclerInfo.cs" />
     <Compile Include="Model\Ships\LightFighterInfo.cs" />
     <Compile Include="Model\Ships\LargeCargoInfo.cs" />
+    <Compile Include="Model\Ships\ShipUnitInfo.cs" />
     <Compile Include="Model\Ships\SmallCargoInfo.cs" />
     <Compile Include="Model\Unit.cs" />
     <Compile Include="Model\UnitType.cs" />

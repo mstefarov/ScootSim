@@ -1,13 +1,9 @@
 ﻿namespace ScootSim {
-    class RecyclerInfo : UnitInfo {
+    class RecyclerInfo : ShipUnitInfo {
         const int BaseSpeed = 7500;
 
         public override UnitType Type {
             get { return UnitType.Recycler; }
-        }
-
-        public override string Name {
-            get { return "Recycler"; }
         }
 
         public override int WeaponPower {

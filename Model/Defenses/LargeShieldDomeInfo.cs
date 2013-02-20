@@ -1,7 +1,7 @@
 ﻿namespace ScootSim {
-    class SolarSatInfo : DefenseUnitInfo {
+    class LargeShieldDomeInfo : DefenseUnitInfo {
         public override UnitType Type {
-            get { return UnitType.SolarSat; }
+            get { return UnitType.LargeShieldDome; }
         }
 
         public override int WeaponPower {
@@ -9,15 +9,15 @@
         }
 
         public override int ShieldPower {
-            get { return 1; }
+            get { return 10000; }
         }
 
         public override int StructuralIntegrity {
-            get { return 2000; }
+            get { return 100000; }
         }
 
         public override Res Cost {
-            get { return new Res( 2000, 2000, 0 ); }
+            get { return new Res( 50000, 50000, 0 ); }
         }
     }
 }

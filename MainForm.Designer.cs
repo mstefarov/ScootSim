@@ -1080,10 +1080,11 @@
             this.defRL.Location = new System.Drawing.Point(3, 19);
             this.defRL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.defRL.Name = "defRL";
-            this.defRL.ShipType = "R. Launcher";
+            this.defRL.ShipTypeLabel = "R. Launcher";
             this.defRL.ShowCheckbox = false;
             this.defRL.Size = new System.Drawing.Size(312, 24);
             this.defRL.TabIndex = 30;
+            this.defRL.UnitType = ScootSim.UnitType.RocketLauncher;
             // 
             // defLL
             // 
@@ -1094,10 +1095,11 @@
             this.defLL.Location = new System.Drawing.Point(3, 45);
             this.defLL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.defLL.Name = "defLL";
-            this.defLL.ShipType = "Light Laser";
+            this.defLL.ShipTypeLabel = "Light Laser";
             this.defLL.ShowCheckbox = false;
             this.defLL.Size = new System.Drawing.Size(312, 24);
             this.defLL.TabIndex = 31;
+            this.defLL.UnitType = ScootSim.UnitType.LightLaser;
             // 
             // defHL
             // 
@@ -1108,10 +1110,11 @@
             this.defHL.Location = new System.Drawing.Point(3, 71);
             this.defHL.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.defHL.Name = "defHL";
-            this.defHL.ShipType = "Heavy Laser";
+            this.defHL.ShipTypeLabel = "Heavy Laser";
             this.defHL.ShowCheckbox = false;
             this.defHL.Size = new System.Drawing.Size(312, 24);
             this.defHL.TabIndex = 32;
+            this.defHL.UnitType = ScootSim.UnitType.HeavyLaser;
             // 
             // defGC
             // 
@@ -1122,10 +1125,11 @@
             this.defGC.Location = new System.Drawing.Point(3, 97);
             this.defGC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.defGC.Name = "defGC";
-            this.defGC.ShipType = "Gauss Cannon";
+            this.defGC.ShipTypeLabel = "Gauss Cannon";
             this.defGC.ShowCheckbox = false;
             this.defGC.Size = new System.Drawing.Size(312, 24);
             this.defGC.TabIndex = 33;
+            this.defGC.UnitType = ScootSim.UnitType.GaussCannon;
             // 
             // defIC
             // 
@@ -1136,10 +1140,11 @@
             this.defIC.Location = new System.Drawing.Point(3, 123);
             this.defIC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.defIC.Name = "defIC";
-            this.defIC.ShipType = "Ion Cannon";
+            this.defIC.ShipTypeLabel = "Ion Cannon";
             this.defIC.ShowCheckbox = false;
             this.defIC.Size = new System.Drawing.Size(312, 24);
             this.defIC.TabIndex = 34;
+            this.defIC.UnitType = ScootSim.UnitType.IonCannon;
             // 
             // defPT
             // 
@@ -1150,10 +1155,11 @@
             this.defPT.Location = new System.Drawing.Point(3, 149);
             this.defPT.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.defPT.Name = "defPT";
-            this.defPT.ShipType = "Plasma Turret";
+            this.defPT.ShipTypeLabel = "Plasma Turret";
             this.defPT.ShowCheckbox = false;
             this.defPT.Size = new System.Drawing.Size(312, 24);
             this.defPT.TabIndex = 35;
+            this.defPT.UnitType = ScootSim.UnitType.PlasmaTurret;
             // 
             // xSmallDome
             // 
@@ -1184,10 +1190,11 @@
             this.defSS.Location = new System.Drawing.Point(3, 225);
             this.defSS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.defSS.Name = "defSS";
-            this.defSS.ShipType = "Solar Sat";
+            this.defSS.ShipTypeLabel = "Solar Sat";
             this.defSS.ShowCheckbox = false;
             this.defSS.Size = new System.Drawing.Size(312, 24);
             this.defSS.TabIndex = 36;
+            this.defSS.UnitType = ScootSim.UnitType.SolarSat;
             // 
             // pResultLeft
             // 
@@ -1667,10 +1674,11 @@
             this.shipDefenderSC.Location = new System.Drawing.Point(2, 19);
             this.shipDefenderSC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderSC.Name = "shipDefenderSC";
-            this.shipDefenderSC.ShipType = "Small Cargo";
+            this.shipDefenderSC.ShipTypeLabel = "Small Cargo";
             this.shipDefenderSC.ShowCheckbox = false;
             this.shipDefenderSC.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderSC.TabIndex = 13;
+            this.shipDefenderSC.UnitType = ScootSim.UnitType.SmallCargo;
             // 
             // shipDefenderLC
             // 
@@ -1681,10 +1689,11 @@
             this.shipDefenderLC.Location = new System.Drawing.Point(2, 45);
             this.shipDefenderLC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderLC.Name = "shipDefenderLC";
-            this.shipDefenderLC.ShipType = "Large Cargo";
+            this.shipDefenderLC.ShipTypeLabel = "Large Cargo";
             this.shipDefenderLC.ShowCheckbox = false;
             this.shipDefenderLC.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderLC.TabIndex = 14;
+            this.shipDefenderLC.UnitType = ScootSim.UnitType.LargeCargo;
             // 
             // shipDefenderLF
             // 
@@ -1695,10 +1704,11 @@
             this.shipDefenderLF.Location = new System.Drawing.Point(2, 71);
             this.shipDefenderLF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderLF.Name = "shipDefenderLF";
-            this.shipDefenderLF.ShipType = "Light Fighter";
+            this.shipDefenderLF.ShipTypeLabel = "Light Fighter";
             this.shipDefenderLF.ShowCheckbox = false;
             this.shipDefenderLF.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderLF.TabIndex = 15;
+            this.shipDefenderLF.UnitType = ScootSim.UnitType.LightFighter;
             // 
             // shipDefenderHF
             // 
@@ -1709,10 +1719,11 @@
             this.shipDefenderHF.Location = new System.Drawing.Point(2, 97);
             this.shipDefenderHF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderHF.Name = "shipDefenderHF";
-            this.shipDefenderHF.ShipType = "Heavy Fighter";
+            this.shipDefenderHF.ShipTypeLabel = "Heavy Fighter";
             this.shipDefenderHF.ShowCheckbox = false;
             this.shipDefenderHF.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderHF.TabIndex = 16;
+            this.shipDefenderHF.UnitType = ScootSim.UnitType.HeavyFighter;
             // 
             // shipDefenderCR
             // 
@@ -1723,10 +1734,11 @@
             this.shipDefenderCR.Location = new System.Drawing.Point(2, 123);
             this.shipDefenderCR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderCR.Name = "shipDefenderCR";
-            this.shipDefenderCR.ShipType = "Cruiser";
+            this.shipDefenderCR.ShipTypeLabel = "Cruiser";
             this.shipDefenderCR.ShowCheckbox = false;
             this.shipDefenderCR.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderCR.TabIndex = 17;
+            this.shipDefenderCR.UnitType = ScootSim.UnitType.Cruiser;
             // 
             // shipDefenderBS
             // 
@@ -1737,10 +1749,11 @@
             this.shipDefenderBS.Location = new System.Drawing.Point(2, 149);
             this.shipDefenderBS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderBS.Name = "shipDefenderBS";
-            this.shipDefenderBS.ShipType = "Battleship";
+            this.shipDefenderBS.ShipTypeLabel = "Battleship";
             this.shipDefenderBS.ShowCheckbox = false;
             this.shipDefenderBS.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderBS.TabIndex = 18;
+            this.shipDefenderBS.UnitType = ScootSim.UnitType.Battleship;
             // 
             // shipDefenderCS
             // 
@@ -1751,10 +1764,11 @@
             this.shipDefenderCS.Location = new System.Drawing.Point(2, 175);
             this.shipDefenderCS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderCS.Name = "shipDefenderCS";
-            this.shipDefenderCS.ShipType = "Colony Ship";
+            this.shipDefenderCS.ShipTypeLabel = "Colony Ship";
             this.shipDefenderCS.ShowCheckbox = false;
             this.shipDefenderCS.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderCS.TabIndex = 19;
+            this.shipDefenderCS.UnitType = ScootSim.UnitType.ColonyShip;
             // 
             // shipDefenderR
             // 
@@ -1765,10 +1779,11 @@
             this.shipDefenderR.Location = new System.Drawing.Point(2, 201);
             this.shipDefenderR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderR.Name = "shipDefenderR";
-            this.shipDefenderR.ShipType = "Recycler";
+            this.shipDefenderR.ShipTypeLabel = "Recycler";
             this.shipDefenderR.ShowCheckbox = false;
             this.shipDefenderR.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderR.TabIndex = 20;
+            this.shipDefenderR.UnitType = ScootSim.UnitType.Recycler;
             // 
             // shipDefenderESP
             // 
@@ -1779,10 +1794,11 @@
             this.shipDefenderESP.Location = new System.Drawing.Point(2, 227);
             this.shipDefenderESP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderESP.Name = "shipDefenderESP";
-            this.shipDefenderESP.ShipType = "Esp Probe";
+            this.shipDefenderESP.ShipTypeLabel = "Esp Probe";
             this.shipDefenderESP.ShowCheckbox = false;
             this.shipDefenderESP.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderESP.TabIndex = 21;
+            this.shipDefenderESP.UnitType = ScootSim.UnitType.EspProbe;
             // 
             // shipDefenderB
             // 
@@ -1793,10 +1809,11 @@
             this.shipDefenderB.Location = new System.Drawing.Point(2, 253);
             this.shipDefenderB.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderB.Name = "shipDefenderB";
-            this.shipDefenderB.ShipType = "Bomber";
+            this.shipDefenderB.ShipTypeLabel = "Bomber";
             this.shipDefenderB.ShowCheckbox = false;
             this.shipDefenderB.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderB.TabIndex = 22;
+            this.shipDefenderB.UnitType = ScootSim.UnitType.Bomber;
             // 
             // shipDefenderDS
             // 
@@ -1807,10 +1824,11 @@
             this.shipDefenderDS.Location = new System.Drawing.Point(2, 279);
             this.shipDefenderDS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderDS.Name = "shipDefenderDS";
-            this.shipDefenderDS.ShipType = "Destroyer";
+            this.shipDefenderDS.ShipTypeLabel = "Destroyer";
             this.shipDefenderDS.ShowCheckbox = false;
             this.shipDefenderDS.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderDS.TabIndex = 23;
+            this.shipDefenderDS.UnitType = ScootSim.UnitType.Destroyer;
             // 
             // shipDefenderRIP
             // 
@@ -1821,10 +1839,11 @@
             this.shipDefenderRIP.Location = new System.Drawing.Point(2, 305);
             this.shipDefenderRIP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderRIP.Name = "shipDefenderRIP";
-            this.shipDefenderRIP.ShipType = "Deathstar";
+            this.shipDefenderRIP.ShipTypeLabel = "Deathstar";
             this.shipDefenderRIP.ShowCheckbox = false;
             this.shipDefenderRIP.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderRIP.TabIndex = 24;
+            this.shipDefenderRIP.UnitType = ScootSim.UnitType.Deathstar;
             // 
             // shipDefenderBC
             // 
@@ -1835,10 +1854,11 @@
             this.shipDefenderBC.Location = new System.Drawing.Point(2, 331);
             this.shipDefenderBC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipDefenderBC.Name = "shipDefenderBC";
-            this.shipDefenderBC.ShipType = "Battlecruiser";
+            this.shipDefenderBC.ShipTypeLabel = "Battlecruiser";
             this.shipDefenderBC.ShowCheckbox = false;
             this.shipDefenderBC.Size = new System.Drawing.Size(310, 24);
             this.shipDefenderBC.TabIndex = 25;
+            this.shipDefenderBC.UnitType = ScootSim.UnitType.Battlecruiser;
             // 
             // pResultsMiddle
             // 
@@ -2223,9 +2243,10 @@
             this.shipAttackerSC.Location = new System.Drawing.Point(3, 19);
             this.shipAttackerSC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerSC.Name = "shipAttackerSC";
-            this.shipAttackerSC.ShipType = "Small Cargo";
+            this.shipAttackerSC.ShipTypeLabel = "Small Cargo";
             this.shipAttackerSC.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerSC.TabIndex = 0;
+            this.shipAttackerSC.UnitType = ScootSim.UnitType.SmallCargo;
             // 
             // shipAttackerLC
             // 
@@ -2236,9 +2257,10 @@
             this.shipAttackerLC.Location = new System.Drawing.Point(3, 45);
             this.shipAttackerLC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerLC.Name = "shipAttackerLC";
-            this.shipAttackerLC.ShipType = "Large Cargo";
+            this.shipAttackerLC.ShipTypeLabel = "Large Cargo";
             this.shipAttackerLC.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerLC.TabIndex = 1;
+            this.shipAttackerLC.UnitType = ScootSim.UnitType.LargeCargo;
             // 
             // shipAttackerLF
             // 
@@ -2249,9 +2271,10 @@
             this.shipAttackerLF.Location = new System.Drawing.Point(3, 71);
             this.shipAttackerLF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerLF.Name = "shipAttackerLF";
-            this.shipAttackerLF.ShipType = "Light Fighter";
+            this.shipAttackerLF.ShipTypeLabel = "Light Fighter";
             this.shipAttackerLF.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerLF.TabIndex = 2;
+            this.shipAttackerLF.UnitType = ScootSim.UnitType.LightFighter;
             // 
             // shipAttackerHF
             // 
@@ -2262,9 +2285,10 @@
             this.shipAttackerHF.Location = new System.Drawing.Point(3, 97);
             this.shipAttackerHF.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerHF.Name = "shipAttackerHF";
-            this.shipAttackerHF.ShipType = "Heavy Fighter";
+            this.shipAttackerHF.ShipTypeLabel = "Heavy Fighter";
             this.shipAttackerHF.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerHF.TabIndex = 3;
+            this.shipAttackerHF.UnitType = ScootSim.UnitType.HeavyFighter;
             // 
             // shipAttackerCR
             // 
@@ -2275,9 +2299,10 @@
             this.shipAttackerCR.Location = new System.Drawing.Point(3, 123);
             this.shipAttackerCR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerCR.Name = "shipAttackerCR";
-            this.shipAttackerCR.ShipType = "Cruiser";
+            this.shipAttackerCR.ShipTypeLabel = "Cruiser";
             this.shipAttackerCR.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerCR.TabIndex = 4;
+            this.shipAttackerCR.UnitType = ScootSim.UnitType.Cruiser;
             // 
             // shipAttackerBS
             // 
@@ -2288,9 +2313,10 @@
             this.shipAttackerBS.Location = new System.Drawing.Point(3, 149);
             this.shipAttackerBS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerBS.Name = "shipAttackerBS";
-            this.shipAttackerBS.ShipType = "Battleship";
+            this.shipAttackerBS.ShipTypeLabel = "Battleship";
             this.shipAttackerBS.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerBS.TabIndex = 5;
+            this.shipAttackerBS.UnitType = ScootSim.UnitType.Battleship;
             // 
             // shipAttackerCS
             // 
@@ -2301,9 +2327,10 @@
             this.shipAttackerCS.Location = new System.Drawing.Point(3, 175);
             this.shipAttackerCS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerCS.Name = "shipAttackerCS";
-            this.shipAttackerCS.ShipType = "Colony Ship";
+            this.shipAttackerCS.ShipTypeLabel = "Colony Ship";
             this.shipAttackerCS.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerCS.TabIndex = 6;
+            this.shipAttackerCS.UnitType = ScootSim.UnitType.ColonyShip;
             // 
             // shipAttackerR
             // 
@@ -2314,9 +2341,10 @@
             this.shipAttackerR.Location = new System.Drawing.Point(3, 201);
             this.shipAttackerR.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerR.Name = "shipAttackerR";
-            this.shipAttackerR.ShipType = "Recycler";
+            this.shipAttackerR.ShipTypeLabel = "Recycler";
             this.shipAttackerR.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerR.TabIndex = 7;
+            this.shipAttackerR.UnitType = ScootSim.UnitType.Recycler;
             // 
             // shipAttackerESP
             // 
@@ -2327,9 +2355,10 @@
             this.shipAttackerESP.Location = new System.Drawing.Point(3, 227);
             this.shipAttackerESP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerESP.Name = "shipAttackerESP";
-            this.shipAttackerESP.ShipType = "Esp Probe";
+            this.shipAttackerESP.ShipTypeLabel = "Esp Probe";
             this.shipAttackerESP.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerESP.TabIndex = 8;
+            this.shipAttackerESP.UnitType = ScootSim.UnitType.EspProbe;
             // 
             // shipAttackerB
             // 
@@ -2340,9 +2369,10 @@
             this.shipAttackerB.Location = new System.Drawing.Point(3, 253);
             this.shipAttackerB.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerB.Name = "shipAttackerB";
-            this.shipAttackerB.ShipType = "Bomber";
+            this.shipAttackerB.ShipTypeLabel = "Bomber";
             this.shipAttackerB.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerB.TabIndex = 9;
+            this.shipAttackerB.UnitType = ScootSim.UnitType.Bomber;
             // 
             // shipAttackerDS
             // 
@@ -2353,9 +2383,10 @@
             this.shipAttackerDS.Location = new System.Drawing.Point(3, 279);
             this.shipAttackerDS.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerDS.Name = "shipAttackerDS";
-            this.shipAttackerDS.ShipType = "Destroyer";
+            this.shipAttackerDS.ShipTypeLabel = "Destroyer";
             this.shipAttackerDS.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerDS.TabIndex = 10;
+            this.shipAttackerDS.UnitType = ScootSim.UnitType.Destroyer;
             // 
             // shipAttackerRIP
             // 
@@ -2366,9 +2397,10 @@
             this.shipAttackerRIP.Location = new System.Drawing.Point(3, 305);
             this.shipAttackerRIP.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerRIP.Name = "shipAttackerRIP";
-            this.shipAttackerRIP.ShipType = "Deathstar";
+            this.shipAttackerRIP.ShipTypeLabel = "Deathstar";
             this.shipAttackerRIP.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerRIP.TabIndex = 11;
+            this.shipAttackerRIP.UnitType = ScootSim.UnitType.Deathstar;
             // 
             // shipAttackerBC
             // 
@@ -2379,9 +2411,10 @@
             this.shipAttackerBC.Location = new System.Drawing.Point(3, 331);
             this.shipAttackerBC.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.shipAttackerBC.Name = "shipAttackerBC";
-            this.shipAttackerBC.ShipType = "Battlecruiser";
+            this.shipAttackerBC.ShipTypeLabel = "Battlecruiser";
             this.shipAttackerBC.Size = new System.Drawing.Size(310, 24);
             this.shipAttackerBC.TabIndex = 12;
+            this.shipAttackerBC.UnitType = ScootSim.UnitType.Battlecruiser;
             // 
             // gFuel
             // 

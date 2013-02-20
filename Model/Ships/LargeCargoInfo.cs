@@ -1,13 +1,9 @@
 ﻿namespace ScootSim {
-    class LargeCargoInfo : UnitInfo {
+    class LargeCargoInfo : ShipUnitInfo {
         const int BaseSpeed = 7500;
 
         public override UnitType Type {
             get { return UnitType.LargeCargo; }
-        }
-
-        public override string Name {
-            get { return "Large Cargo"; }
         }
 
         public override int WeaponPower {

@@ -6,10 +6,6 @@
             get { return UnitType.Deathstar; }
         }
 
-        public override string Name {
-            get { return "Deathstar"; }
-        }
-
         public override int WeaponPower {
             get { return 200000; }
         }

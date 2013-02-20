@@ -6,10 +6,6 @@
             get { return UnitType.Destroyer; }
         }
 
-        public override string Name {
-            get { return "Destroyer"; }
-        }
-
         public override int WeaponPower {
             get { return 2000; }
         }

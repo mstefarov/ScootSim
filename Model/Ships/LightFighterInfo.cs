@@ -1,13 +1,9 @@
 ﻿namespace ScootSim {
-    class LightFighterInfo : UnitInfo {
+    class LightFighterInfo : ShipUnitInfo {
         const int BaseSpeed = 12500;
 
         public override UnitType Type {
             get { return UnitType.LightFighter; }
-        }
-
-        public override string Name {
-            get { return "Light Fighter"; }
         }
 
         public override int WeaponPower {

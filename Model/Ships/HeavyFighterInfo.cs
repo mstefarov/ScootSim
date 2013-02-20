@@ -6,10 +6,6 @@
             get { return UnitType.HeavyFighter; }
         }
 
-        public override string Name {
-            get { return "Heavy Fighter"; }
-        }
-
         public override int WeaponPower {
             get { return 150; }
         }

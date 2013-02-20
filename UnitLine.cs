@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace ScootSim {
-    public partial class UnitLine : UserControl {
+    partial class UnitLine : UserControl {
         public UnitLine() {
             InitializeComponent();
             Text = "";
@@ -83,7 +83,7 @@ namespace ScootSim {
         [DefaultValue( "(Ship Type)" )]
         [EditorBrowsable]
         [Category( "Custom" )]
-        public string ShipType {
+        public string ShipTypeLabel {
             get {
                 return lShipType.Text;
             }
@@ -91,6 +91,11 @@ namespace ScootSim {
                 lShipType.Text = value;
             }
         }
+
+
+        [EditorBrowsable]
+        [Category( "Custom" )]
+        public UnitType UnitType { get; set; }
 
 
         [DefaultValue( false )]

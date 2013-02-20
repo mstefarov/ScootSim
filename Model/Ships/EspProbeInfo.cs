@@ -1,13 +1,9 @@
 ﻿namespace ScootSim {
-    class EspProbeInfo : UnitInfo {
+    class EspProbeInfo : ShipUnitInfo {
         const int BaseSpeed = 100000000;
 
         public override UnitType Type {
             get { return UnitType.EspProbe; }
-        }
-
-        public override string Name {
-            get { return "Esp Probe"; }
         }
 
         public override int WeaponPower {
@@ -33,7 +29,6 @@
         public override int Value {
             get { return 0; }
         }
-
 
 
         public override int GetRapidFire( UnitType target ) {
